@@ -1,0 +1,183 @@
+*,
+*:before,
+*:after {
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'AktivGrotesk', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+.root {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper {
+    max-width: 1920px;
+    width: 100%;
+    padding: 0 69px;
+    position: relative;
+    z-index: 5;
+}
+
+/* POSITIONING */
+
+.blue-gradient {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+.pink-round-gradient {
+    position: absolute;
+    z-index: 1;
+}
+
+.round-circle-right {
+    position: absolute;
+    right: -500px;
+    z-index: 2;
+}
+
+.round-circle-left {
+    position: absolute;
+    left: -500px;
+    top: 478px;
+    z-index: 2;
+}
+
+/* REUSABLE */
+
+.italic {
+    font-family: 'William', sans-serif;
+}
+
+.heading-wrap {
+    position: relative;
+}
+
+.heading {
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 0.99;
+}
+
+.heading-line {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 45em;
+    height: 1px;
+    background-color: #000;
+}
+
+.text-l {
+    font-size: 35px;
+}
+
+.text-m {
+    font-size: 25px;
+}
+
+.button {
+    padding: 15px 55px;
+    font-size: 44px;
+    border-radius: 18px;
+    background-color: #90BAFF;
+    color: #Fff;
+    border: 1px solid #6A90FF;
+    border-right-width: 2px;
+    border-right-color: #6A90FF;
+    border-left-width: 2px;
+    border-left-color: #6A90FF;
+    border-top-width: 0;
+    border-bottom-width: 3px;
+}
+
+/* HEADER */
+
+.header {
+    padding-top: 48px;
+    margin-bottom: 100px;
+    display: flex;
+}
+
+.header-left,
+.header-right {
+    width: 50%;
+}
+
+.header-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-item {
+    font-size: 23px;
+}
+
+.header-people-important {
+    font-size: 30px;
+    color: #Fff;
+}
+
+/* MAIN */
+
+.main {
+    padding-left: 130px;
+    padding-right: 90px;
+    position: relative;
+}
+
+.footage {
+    position: absolute;
+    right: -10em;
+    width: 80em;
+}
+
+.italic.main__italic {
+    font-size: 85px;
+}
+
+.heading-wrap.main__heading-wrap {
+    margin-bottom: 42px;
+}
+
+.advantage-list {
+    display: flex;
+    gap: 58px;
+    margin-top: 80px;
+}
+
+.advantage-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.advantage-icon {
+    width: 180px;
+}
+
+.advantage-icon.main__advantage-icon {
+    width: 160px;
+}
+
+.button.main__button {
+    margin-top: 75px;
+}

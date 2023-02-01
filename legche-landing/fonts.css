@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'AktivGrotesk';
+    src: url('./assets/fonts/AktivGrotesk-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'William';
+    src: url('./assets/fonts/William Text Pro Reg Ita.woff2') format('woff2');
+}
