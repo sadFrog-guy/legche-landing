@@ -55,6 +55,14 @@ body {
     z-index: 2;
 }
 
+.example-gradient {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 20em;
+    z-index: 1;
+}
+
 /* REUSABLE */
 
 .italic {
@@ -69,6 +77,7 @@ body {
     font-size: 80px;
     font-weight: 400;
     line-height: 0.99;
+    overflow: hidden;
 }
 
 .heading-line {
@@ -86,6 +95,30 @@ body {
 
 .text-m {
     font-size: 25px;
+}
+
+.text-s {
+    font-size: 20px;
+}
+
+.c-biege {
+    background-color: #FFB995;
+}
+
+.c-orange {
+    background-color: #FF9780;
+}
+
+.c-blue {
+    background-color: #8791FF;
+}
+
+.c-pink {
+    background-color: #FF97A6;
+}
+
+.c-skyblue {
+    background-color: #B0B4FF;
 }
 
 .button {
@@ -140,6 +173,7 @@ body {
 .main {
     padding-left: 130px;
     padding-right: 90px;
+    margin-bottom: 298px;
     position: relative;
 }
 
@@ -180,4 +214,89 @@ body {
 
 .button.main__button {
     margin-top: 75px;
+}
+
+/* EXAMPLE */
+
+.example {
+    position: relative;
+    width: 1920px;
+    z-index: 4;
+    margin-bottom: 147px;
+}
+
+.heading-wrap.example__heading-wrap {
+    padding-left: 270px;
+    margin-bottom: 81px;
+}
+
+.heading-line.example__heading-line {
+    width: 36em;
+    right: 30px;
+}
+
+.text-l.example__text-l {
+    position: relative;
+    z-index: 4;
+    padding-left: 270px;
+}
+
+#example-list {
+    margin-bottom: 122px;
+    cursor: move;
+    cursor: grab;
+}
+
+.example-item {
+    margin: 0 auto;
+    padding: 26px 20px;
+    position: relative;
+    display: flex;
+    height: 422px;
+    width: 328px;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 13px;
+}
+
+.example-top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.example-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.example-heading {
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: 52px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+.example-int {
+    font-size: 100px;
+    font-family: 'Berlingske', sans-serif;
+    letter-spacing: -4px;
+}
+
+.example-icon {
+    position: absolute;
+    top: 13px;
+    right: 17px;
+}
+
+/* AUDITORY */
+
+.player {
+    width: 1050px;
+    height: 590px;
+    object-fit: cover;
+    border-radius: 24px;
 }

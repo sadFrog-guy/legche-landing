@@ -7,3 +7,8 @@
     font-family: 'William';
     src: url('./assets/fonts/William Text Pro Reg Ita.woff2') format('woff2');
 }
+
+@font-face {
+    font-family: 'Berlingske';
+    src: url('./assets/fonts/BerlingskeSerif-Md.woff2') format('woff2');
+}
