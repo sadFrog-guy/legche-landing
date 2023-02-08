@@ -91,7 +91,7 @@ section {
 
 .round-circle-tagline {
     position: absolute;
-    bottom: -7em;
+    bottom: 0;
     right: -500px;
     z-index: 3;
     filter: blur(48px);
@@ -127,7 +127,7 @@ section {
 
 .progress-gradient {
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     top: 300em;
     left: -500px;
 }
