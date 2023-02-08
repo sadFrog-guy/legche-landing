@@ -7853,6 +7853,11 @@ let sectionCallback = function(entries, observer) {
             circleRight.style.opacity = '1'
         }
 
+        if(entry.target.classList[0] === 'team' && entry.isIntersecting) {
+            circleRight.style.opacity = '0'
+            circleLeft.style.opacity = '0'
+        }
+
         animejs__WEBPACK_IMPORTED_MODULE_0__["default"].timeline({loop: false})
             .add({
                 targets: `.letter`,
