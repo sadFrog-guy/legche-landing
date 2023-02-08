@@ -1,4 +1,3 @@
-import Scrollbar from 'smooth-scrollbar';
 import Swiper from 'swiper';
 import 'swiper/css';
 

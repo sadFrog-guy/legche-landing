@@ -1,15 +1,17 @@
 {
   "dependencies": {
     "animejs": "^3.2.1",
-    "smooth-scrollbar": "^8.8.1",
-    "swiper": "^9.0.2",
-    "waypoints": "^4.0.1"
+    "countup.js": "^2.4.2",
+    "swiper": "^9.0.2"
   },
   "name": "legche-landing",
   "version": "1.0.0",
-  "main": "src/scrollbar.js",
+  "main": "src/scrollbarInit.js",
   "devDependencies": {
+    "browserify": "^17.0.0",
+    "browserify-shim": "^3.8.16",
     "css-loader": "^6.7.3",
+    "error-overlay-webpack-plugin": "^1.1.1",
     "html-loader": "^4.2.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.75.0",
@@ -23,5 +25,18 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "browser": {
+    "waypoints": "./src/waypoint/lib/noframework.waypoints.js"
+  },
+  "browserify-shim": {
+    "waypoints": {
+      "exports": "waypoints"
+    }
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  }
 }

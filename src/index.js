@@ -1,2 +1,2 @@
-import './scrollbar';
 import './slider';
+import './perSectionAnim';

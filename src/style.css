@@ -10,22 +10,26 @@
 
 html {
     scroll-behavior: smooth;
+    min-height: 100%;
+    height: auto;
 }
 
 body {
     font-family: 'AktivGrotesk', sans-serif;
-    width: 100%;
-    height: 100vh;
+    min-height: 100%;
+    height: auto;
+    overflow: auto;
 }
 
 .root {
-    position: fixed!important;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     overflow-x: hidden;
     z-index: 10;
+    position: relative;
+    min-height: 100%;
+    height: auto;
 }
 
 .wrapper {
@@ -36,17 +40,25 @@ body {
     z-index: 5;
 }
 
-.scroll-content {
-    max-width: 100%;
-    overflow-x: hidden !important;
+.fade-in {
+    transform: translateX(0);
+    opacity: 1;
+    transition-property: transform, opacity;
+    transition-duration: .8s;
+    transition-timing-function: ease;
+}
+
+section {
+    opacity: 0;
+    transform: translateX(-50px);
 }
 
 /* POSITIONING */
 
 .blue-gradient {
-    position: fixed;
+    position: absolute;
     top: 0;
-    z-index: 15;
+    z-index: 3;
 }
 
 .pink-round-gradient {
@@ -58,6 +70,31 @@ body {
     position: fixed;
     right: -500px;
     z-index: 2;
+    transition: opacity .5s;
+}
+
+.round-circle-main {
+    position: absolute;
+    left: -600px;
+    top: 478px;
+    z-index: 3;
+    filter: blur(48px);
+}
+
+.round-circle-expert {
+    position: absolute;
+    right: -500px;
+    top: 202em;
+    z-index: 3;
+    filter: blur(48px);
+}
+
+.round-circle-tagline {
+    position: absolute;
+    bottom: -7em;
+    right: -500px;
+    z-index: 3;
+    filter: blur(48px);
 }
 
 .round-circle-left {
@@ -65,6 +102,8 @@ body {
     left: -500px;
     top: 478px;
     z-index: 2;
+    opacity: 0;
+    transition: opacity .5s;
 }
 
 .example-gradient {
@@ -102,7 +141,7 @@ body {
 
 .team-gradient {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top: 480em;
 }
 
@@ -140,8 +179,7 @@ body {
 .heading {
     font-size: 80px;
     font-weight: 400;
-    line-height: 0.99;
-    overflow: hidden;
+    line-height: 0.94;
 }
 
 .heading-line {
@@ -155,14 +193,17 @@ body {
 
 .text-l {
     font-size: 35px;
+    line-height: 0.9;
 }
 
 .text-m {
     font-size: 25px;
+    line-height: 0.9;
 }
 
 .text-s {
     font-size: 20px;
+    line-height: 0.9;
 }
 
 .c-biege {
@@ -208,8 +249,6 @@ body {
     display: flex;
     position: fixed;
     top: 0;
-    right: 69px;
-    left: 69px;
     z-index: 15;
     max-width: 1920px;
 }
@@ -236,6 +275,7 @@ body {
 .header-people-important {
     font-size: 30px;
     color: #Fff;
+    line-height: 0.8;
 }
 
 /* MAIN */
@@ -261,7 +301,6 @@ body {
 
 .heading-wrap.main__heading-wrap {
     margin-bottom: 42px;
-    right: 4em;
 }
 
 .advantage-list {
@@ -625,10 +664,6 @@ body {
 
 /* TEAM */
 
-.team {
-    margin-bottom: 436px;
-}
-
 .heading-line.team__heading-line {
     width: 58em;
     right: 3em;
@@ -707,6 +742,7 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 368px;
+    margin-top: 436px;
 }
 
 .heading-line.tagline__heading-line {

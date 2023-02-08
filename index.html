@@ -11,42 +11,17 @@
 </head>
 <body>
 
-    <img src="src/assets/other/blue-gradient.png" alt="" class="blue-gradient">
-    <img src="src/assets/other/footer-gradient.png" alt="" class="footer-gradient">
-
-    <header class="header">
-        <div class="header-left">
-            <img src="src/assets/icons/logo.png" alt="Легче" class="header-logo">
-        </div>
-        <div class="header-right">
-            <nav class="nav">
-                <span class="nav-item">
-                    Центр
-                </span>
-                <span class="nav-item">
-                    Эксперты
-                </span>
-                <span class="nav-item">
-                    Проекты
-                </span>
-                <span class="nav-item">
-                    Команда
-                </span>
-            </nav>
-            <span class="header-people-important">
-                люди
-                <br>
-                <span class="italic">важнее</span>
-                <br>
-                идей
-            </span>
-        </div>
-    </header>
-
     <div class="root">
+
+        <img src="src/assets/other/blue-gradient.png" alt="" class="blue-gradient">
+        <img src="src/assets/other/footer-gradient.png" alt="" class="footer-gradient">
         <img src="src/assets/other/pink-round-gradient.png" alt="" class="pink-round-gradient">
+
         <img src="src/assets/other/round-circle.png" alt="" class="round-circle-right">
         <img src="src/assets/other/round-circle.png" alt="" class="round-circle-left">
+        <img src="src/assets/other/round-circle.png" alt="" class="round-circle-main">
+        <img src="src/assets/other/round-circle.png" alt="" class="round-circle-expert">
+        <img src="src/assets/other/round-circle.png" alt="" class="round-circle-tagline">
 
         <img src="src/assets/other/example-gradient.png" class="example-gradient" alt="">
         <img src="src/assets/other/auditory-gradient.png" alt="" class="auditory-gradient">
@@ -55,8 +30,40 @@
         <img src="src/assets/other/auditory-gradient.png" alt="" class="progress-inner-gradient">
         <img src="src/assets/other/example-gradient.png" class="team-gradient" alt="">
 
+        <header class="header wrapper">
+            <div class="header-left">
+                <img src="src/assets/icons/logo.png" alt="Легче" class="header-logo">
+            </div>
+            <div class="header-right">
+                <nav class="nav">
+                    <span class="nav-item">
+                        Центр
+                    </span>
+                        <span class="nav-item">
+                        Эксперты
+                    </span>
+                        <span class="nav-item">
+                        Проекты
+                    </span>
+                        <span class="nav-item">
+                        Команда
+                    </span>
+                </nav>
+                <span class="header-people-important">
+                    люди
+                    <br>
+                    <span class="italic">важнее</span>
+                    <br>
+                    идей
+                </span>
+            </div>
+        </header>
+
         <section class="main wrapper">
             <img class="footage" src="src/assets/other/Legche-footage-unscreen.gif" alt="">
+<!--            <video muted>-->
+<!--                <source src="src/assets/other/Legche_footage.mp4">-->
+<!--            </video>-->
 
             <div class="heading-wrap main__heading-wrap">
                 <h1 class="heading">
@@ -116,12 +123,12 @@
             </button>
         </section>
 
-        <section class="example">
+        <section class="example" data-scroll>
             <div class="heading-wrap example__heading-wrap">
                 <h1 class="heading">
-                    <span class="example-letters">Примеры обьемов продаж</span>
+                    <span class="letters">Примеры обьемов продаж</span>
                     <br>
-                    <span class="italic example-letters main__italic">наших продуктов</span>
+                    <span class="italic letters main__italic">наших продуктов</span>
                 </h1>
                 <div class="heading-line example__heading-line"></div>
             </div>
@@ -302,9 +309,15 @@
         <section class="auditory wrapper">
             <div class="heading-wrap auditory__heading-wrap">
                 <h1 class="heading">
-                    <span class="italic">Для кого?</span>
+                    <span class="italic letters">Для кого?</span>
                     <br>
-                    Для людей, живущих по всему миру и говорящих на русском языке
+                    <span class="letters">
+                        Для людей, живущих по всему миру
+                    </span>
+                    <br>
+                    <span class="letters">
+                        и говорящих на русском языке
+                    </span>
                 </h1>
                 <div class="heading-line auditory__heading-line"></div>
             </div>
@@ -325,9 +338,9 @@
         <section class="expert wrapper">
             <div class="heading-wrap expert__heading-wrap">
                 <h1 class="heading">
-                    Что получает эксперт
+                    <span class="letters">Что получает эксперт</span>
                     <br>
-                    <span class="italic">от работы с нами?</span>
+                    <span class="italic letters">от работы с нами?</span>
                 </h1>
                 <div class="heading-line expert__heading-line"></div>
             </div>
@@ -353,9 +366,9 @@
         <section class="partner wrapper">
             <div class="heading-wrap example__heading-wrap partner__heading-wrap">
                 <h1 class="heading">
-                    С кем мы работали
+                    <span class="letters">С кем мы работали</span>
                     <br>
-                    <span class="italic">и работаем</span>
+                    <span class="italic letters">и работаем</span>
                 </h1>
                 <div class="heading-line partner__heading-line"></div>
             </div>
@@ -547,9 +560,9 @@
         <section class="progress wrapper">
             <div class="heading-wrap progress__heading-wrap">
                 <h1 class="heading">
-                    Что мы сделали
+                    <span class="letters">Что мы сделали</span>
                     <br>
-                    <span class="italic">за 3 года</span>
+                    <span class="italic letters">за 3 года</span>
                 </h1>
                 <div class="heading-line progress__heading-line"></div>
             </div>
@@ -565,11 +578,11 @@
                                 приняли участие
                             </p>
                             <h3 class="progress-heading">
-                                16156
+                                <span class="numeric" id="numeric1">16156</span>
                                 <br>
                                 выпускников
                                 <br>
-                                из 53 стран
+                                из <span class="numeric" id="numeric2">53</span> стран
                             </h3>
                         </div>
                     </div>
@@ -579,7 +592,7 @@
                                 отправили
                             </p>
                             <h3 class="progress-heading">
-                                11978
+                                <span class="numeric" id="numeric3">11978</span>
                                 <br>
                                 рассылок
                             </h3>
@@ -592,7 +605,7 @@
                                 аудитории
                             </p>
                             <h3 class="progress-heading">
-                                150
+                                <span class="numeric" id="numeric4">150</span>
                                 <br>
                                 городов
                             </h3>
@@ -606,7 +619,7 @@
                         Запустили
                     </h3>
                     <h3 class="progress-heading">
-                        36
+                        <span class="numeric" id="numeric5">36</span>
                     </h3>
                     <h3 class="progress-heading">
                         новых
@@ -623,7 +636,7 @@
                                 провели
                             </p>
                             <h3 class="progress-heading">
-                                150 сессий
+                                <span class="numeric" id="numeric6">150</span> сессий
                                 <br>
                                 вопросов
                                 <br>
@@ -638,7 +651,7 @@
                                 получили
                             </p>
                             <h3 class="progress-heading">
-                                3456
+                                <span class="numeric" id="numeric7">3456</span>
                                 <br>
                                 отзывов
                             </h3>
@@ -648,7 +661,7 @@
                                 провели
                             </p>
                             <h3 class="progress-heading">
-                                145
+                                <span class="numeric" id="numeric8">145</span>
                                 <br>
                                 прямых
                                 <br>
@@ -671,8 +684,8 @@
         <section class="team wrapper">
             <div class="heading-wrap main__heading-wrap team__heading-wrap">
                 <h1 class="heading">
-                    Команда
-                    <span class="italic">«Легче»</span>
+                    <span class="letters">Команда</span>
+                    <span class="italic letters">«Легче»</span>
                 </h1>
                 <div class="heading-line team__heading-line"></div>
             </div>
@@ -824,9 +837,9 @@
         <section class="tagline wrapper">
             <div class="heading-wrap">
                 <h1 class="heading">
-                    Можно жить лучше, но лучше
+                    <span class="letters">Можно жить лучше, но лучше</span>
                     <br>
-                    <span class="italic">жить легче!</span>
+                    <span class="italic letters">жить легче!</span>
                 </h1>
                 <div class="heading-line tagline__heading-line"></div>
             </div>
