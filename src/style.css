@@ -247,7 +247,7 @@ section {
     padding-top: 48px;
     margin-bottom: 100px;
     display: flex;
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 15;
     max-width: 1920px;
