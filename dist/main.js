@@ -8416,7 +8416,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const headings = document.querySelectorAll('.heading')
     let textWrapper = document.querySelectorAll('.letters');
 
-    if(window.innerWidth >= 1920) {
+    if(window.innerWidth > 1024) {
         console.log('fits')
 
         textWrapper.forEach(textItem => {
