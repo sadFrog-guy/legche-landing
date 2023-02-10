@@ -8462,7 +8462,7 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper", {
             slidesPerView: 3,
             spaceBetween: 3
         },
-        1920: {
+        1900: {
             slidesPerView: "5.4",
         }
     }
