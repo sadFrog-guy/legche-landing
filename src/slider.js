@@ -13,5 +13,14 @@ const swiper = new Swiper(".swiper", {
     speed: 800,
     allowLongSlides: false,
     mousewheel: true,
-    initialSlide: 3
+    initialSlide: 3,
+    breakpoints: {
+        425: {
+            slidesPerView: 3,
+            spaceBetween: 3
+        },
+        1920: {
+            slidesPerView: "5.4",
+        }
+    }
 });

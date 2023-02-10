@@ -18,14 +18,14 @@ body {
     font-family: 'AktivGrotesk', sans-serif;
     min-height: 100%;
     height: auto;
-    overflow: auto;
+    overflow-x: hidden;
 }
 
 .root {
     display: flex;
     align-items: center;
     flex-direction: column;
-    overflow-x: hidden;
+    overflow: visible;
     z-index: 10;
     position: relative;
     min-height: 100%;
@@ -54,6 +54,14 @@ section {
 }
 
 /* POSITIONING */
+
+.gradient-list {
+    width: 100%;
+}
+
+.sm-gradient-list {
+    width: 100%;
+}
 
 .blue-gradient {
     position: absolute;
@@ -142,7 +150,7 @@ section {
 .team-gradient {
     position: absolute;
     z-index: 2;
-    top: 480em;
+    top: 478em;
 }
 
 .footer-gradient {
@@ -239,6 +247,9 @@ section {
     border-left-color: #6A90FF;
     border-top-width: 0;
     border-bottom-width: 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 
 /* HEADER */
@@ -293,10 +304,6 @@ section {
     position: absolute;
     right: -10em;
     width: 80em;
-}
-
-.italic.main__italic {
-    font-size: 85px;
 }
 
 .heading-wrap.main__heading-wrap {
@@ -355,6 +362,7 @@ section {
 
 #example-list {
     margin-bottom: 122px;
+    padding-bottom: 15px;
     cursor: move;
     cursor: grab;
 }
@@ -369,6 +377,7 @@ section {
     justify-content: space-between;
     flex-direction: column;
     border-radius: 13px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .example-top {

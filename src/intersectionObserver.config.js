@@ -43,6 +43,11 @@ export let sectionCallback = function(entries, observer) {
             circleRight.style.opacity = '1'
         }
 
+        if(entry.target.classList[0] === 'team' && entry.isIntersecting) {
+            circleRight.style.opacity = '0'
+            circleLeft.style.opacity = '0'
+        }
+
         anime.timeline({loop: false})
             .add({
                 targets: `.letter`,
