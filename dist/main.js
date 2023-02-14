@@ -8458,7 +8458,7 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper", {
     mousewheel: true,
     initialSlide: 3,
     breakpoints: {
-        425: {
+        325: {
             slidesPerView: 3,
             spaceBetween: 3
         },
