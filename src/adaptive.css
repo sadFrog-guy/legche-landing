@@ -19,7 +19,7 @@
     display: none;
 }
 
-@media (min-width: 325px) {
+@media (max-width: 640px) {
     
     /* POSITIONING */
     
