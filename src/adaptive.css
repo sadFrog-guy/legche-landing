@@ -19,7 +19,7 @@
     display: none;
 }
 
-@media (max-width: 425px) {
+@media (min-width: 325px) {
     
     /* POSITIONING */
     
@@ -31,7 +31,7 @@
         display: none;
     }
 
-    .sm-gradient-list > .pink-round-gradient {
+    .sm-gradient-list > .p  ink-round-gradient {
         width: 500px;
         height: 500px;
         left: -200px;

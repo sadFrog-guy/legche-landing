@@ -66,6 +66,7 @@ section {
 .blue-gradient {
     position: absolute;
     top: 0;
+    width: 100%;
     z-index: 3;
 }
 
@@ -118,6 +119,7 @@ section {
     position: absolute;
     top: 100em;
     z-index: 3;
+    width: 100%;
 }
 
 .auditory-gradient {
@@ -130,6 +132,7 @@ section {
 .expert-gradient {
     position: absolute;
     top: 232em;
+    width: 100%;
     z-index: 1;
 }
 
@@ -151,12 +154,14 @@ section {
     position: absolute;
     z-index: 2;
     top: 478em;
+    width: 100%;
 }
 
 .footer-gradient {
     position: absolute;
     z-index: 1;
     bottom: -30px;
+    width: 100%;
 }
 
 /* REUSABLE */
@@ -365,6 +370,7 @@ section {
     padding-bottom: 15px;
     cursor: move;
     cursor: grab;
+    overflow: visible;
 }
 
 .example-item {
